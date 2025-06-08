@@ -65,7 +65,7 @@ export default function DemoPage() {
           Meet Our Team
         </motion.h2>
         <div className="flex flex-wrap justify-center gap-6">
-          {["Jaisyullah", "Thomas Chaidir ", "Ardian Budi Permana"].map((name, index) => (
+          {["Jaisyullah", "Irsyad Purbha ", "Regi Wahono"].map((name, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
