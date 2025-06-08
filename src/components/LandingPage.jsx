@@ -4,12 +4,12 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Sparkles, HeartPulse, ShieldCheck, BrainCircuit } from "lucide-react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { useNavigate } from "react-router-dom";
 
-const router = useRouter();
+const navigate = useNavigate();
 
 const handleDemoClick = () => {
-  router.push("/demo");
+  navigate("/demo");
 };
 
 export default function LandingPage() {
