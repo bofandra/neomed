@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
@@ -6,13 +5,13 @@ import { Sparkles, HeartPulse, ShieldCheck, BrainCircuit } from "lucide-react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const navigate = useNavigate();
-
-const handleDemoClick = () => {
-  navigate("/demo");
-};
-
 export default function LandingPage() {
+  const navigate = useNavigate();
+
+  const handleDemoClick = () => {
+    navigate("/demo");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white font-sans relative overflow-hidden">
       <video
@@ -47,7 +46,6 @@ export default function LandingPage() {
         >
           Request a Demo
         </Button>
-
       </section>
 
       <section className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-10 pb-20">
