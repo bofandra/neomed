@@ -65,7 +65,7 @@ export default function DemoPage() {
           Meet Our Team
         </motion.h2>
         <div className="flex flex-wrap justify-center gap-6">
-          {["Dr. A. Smith", "Jane Doe", "John Lee"].map((name, index) => (
+          {["Jaisyullah", "Thomas Chaidir ", "Ardian Budi Permana"].map((name, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
@@ -74,7 +74,7 @@ export default function DemoPage() {
               <Card className="bg-white/5 border border-white/10 w-60">
                 <CardContent className="p-4 text-center">
                   <img
-                    src={`/images/team${index + 1}.jpg`}
+                    src={`/images/team${index + 1}.png`}
                     alt={name}
                     className="rounded-full w-24 h-24 mx-auto mb-2"
                   />
