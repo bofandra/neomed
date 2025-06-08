@@ -4,6 +4,13 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Sparkles, HeartPulse, ShieldCheck, BrainCircuit } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
+
+const router = useRouter();
+
+const handleDemoClick = () => {
+  router.push("/demo");
+};
 
 export default function LandingPage() {
   return (
@@ -34,9 +41,13 @@ export default function LandingPage() {
         <p className="text-xl text-slate-300 mb-10">
           Welcome to the future of healthcare operations—intelligent, intuitive, and inspired by the needs of hospitals and clinics. We build digital ecosystems that heal inefficiencies.
         </p>
-        <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg rounded-2xl shadow-xl">
+        <Button
+          onClick={handleDemoClick}
+          className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg rounded-2xl shadow-xl"
+        >
           Request a Demo
         </Button>
+
       </section>
 
       <section className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-10 pb-20">
